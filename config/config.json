@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "nw-ax-square-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/NwAxSquare/NwAxSquareWebPart.js",
+          "manifest": "./src/webparts/NwAxSquare/NwAxSquareWebPart.manifest.json"
+        }
+      ]
+    },
+    "posting-builder-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/postingBuilder/PostingBuilderWebPart.js",
+          "manifest": "./src/webparts/postingBuilder/PostingBuilderWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "NwAxSquareWebPartStrings": "lib/webparts/NwAxSquare/loc/{locale}.js",
+    "PostingBuilderWebPartStrings": "lib/webparts/postingBuilder/loc/{locale}.js"
+  }
+}
